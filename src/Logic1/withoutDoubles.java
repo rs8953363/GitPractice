@@ -15,10 +15,11 @@ public class withoutDoubles {
     }
 
     public static int withoutDoubles(int a, int b, boolean noDoubles) {
-        if ((noDoubles) && (a==b))
-            return a+b+1;
-        else
-            return a+b;
-
+        if (noDoubles){
+            if (a==b){
+                return 7;
+            }
+        }
+        return a+b;
     }
 }
