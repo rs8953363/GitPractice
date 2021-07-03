@@ -18,7 +18,7 @@ public class cigarParty {
         System.out.println(cigarParty(70, true));
     }
     public static boolean cigarParty(int num, boolean bool) {
-        if (bool==true)
+        if (bool==true && num>=40)
             return true;
         else if ((num>=40) && (num<=60))
             return true;

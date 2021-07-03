@@ -15,17 +15,24 @@ public class caughtSpeeding {
         System.out.println(caughtSpeeding(65, true));
     }
 
-    public static int caughtSpeeding(int speed, boolean birthday) {
-        if (birthday==true) {
-
-
-        }else{
-            if (speed >= 81)
+    public static int caughtSpeeding(int speed, boolean isBirthday) {
+        if (isBirthday == true) {
+            if (speed >= 86) {
                 return 2;
-            else if ((speed >= 61) && (speed <= 80))
+            } else if ((speed >= 66) && (speed <= 85)) {
                 return 1;
-            else
+            } else {
                 return 0;
+            }
+        }
+        if (!isBirthday) {
+            if (speed >= 81) {
+                return 2;
+            } else if ((speed >= 61) && (speed <= 80)) {
+                return 1;
+            } else {
+                return 0;
+            }
         }
         return 0;
     }

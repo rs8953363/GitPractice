@@ -3,6 +3,7 @@ intMax(1, 2, 3) → 3
 intMax(1, 3, 2) → 3
 intMax(3, 2, 1) → 3
  */
+/*
 public class intMax {
     public static void main(String[] args) {
         int output=intMax(1,2,3);
@@ -26,3 +27,4 @@ public class intMax {
         return max;
     }
 }
+*/
