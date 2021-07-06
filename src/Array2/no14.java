@@ -6,6 +6,9 @@ no14([2, 3, 4]) → true
  */
 package Array2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class no14 {
     public static void main(String[] args) {
         int[] array1={1, 2, 3};
@@ -27,5 +30,16 @@ public class no14 {
                 return false;
         }
         return true;
+
+        /*ArrayList<Integer> arrList= new ArrayList<>(nums.length);
+        for (int i: nums) {
+            arrList.add(i);
+        }
+        if (arrList.contains(1) && arrList.contains(4)){
+            return false;
+        }
+        return true;
+        */
+
     }
 }

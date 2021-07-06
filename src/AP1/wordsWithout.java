@@ -9,4 +9,26 @@ wordsWithout(["a", "b", "c", "a"], "c") → ["a", "b", "a"]
 package AP1;
 
 public class wordsWithout {
+    public static void main(String[] args) {
+        String[] array1={"a", "b", "c", "a"};
+        String[] output1=wordsWithout(array1, "a");
+        System.out.println(output1);
+
+        String[] array2={"a", "b", "c", "a"};
+        String[] output2=wordsWithout(array2, "b");
+        System.out.println(output2);
+
+        String[] array3={"a", "b", "c", "a"};
+        String[] output3=wordsWithout(array3, "c");
+        System.out.println(output3);
+    }
+
+    public static String[] wordsWithout(String[] words, String target) {
+        String[] arr=new String[words.length-(2*target.length())];
+        for (int i = 0; i <words.length ; i++) {
+            if (words[i]!=target)
+                arr[i]=words[i];
+        }
+        return arr;
+    }
 }
