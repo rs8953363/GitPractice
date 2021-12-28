@@ -13,6 +13,8 @@ public class alarmClock {
         System.out.println(alarmClock(1, false));
         System.out.println(alarmClock(5, false));
         System.out.println(alarmClock(0, false));
+        System.out.println(alarmClock(2, true));
+        System.out.println(alarmClock(6, true));
     }
 
     public static String alarmClock(int day, boolean vacation) {
